@@ -6,6 +6,7 @@ body {
   background-color: #2F4858;
   font-family: ariel, sans-serif;
   color: #f4f4f4;
+
 }
 
 .container {
@@ -106,7 +107,7 @@ body {
 
 .w3-content {
   color: #f4f4f4;
-  height: 200px;
+  height: 290px;
   background-color: #33658a;
   width: 90%;
   padding: 0 10px;
@@ -117,11 +118,30 @@ body {
   margin: 0 auto;
 }
 
-/****** Content ******/
-.content-container {
-  margin: 0 1em;
+.sponsors {
+  display: none;
 }
 
+.sponsor-level {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: rgb(152, 187, 55);
+}
+
+.sponsor-logo {
+  width: 130px;
+  height: 100px;
+}
+
+/****** Content ******/
+.content-container {
+  margin: 1em 1em;
+  line-height: 1.6em;
+}
+
+#hosts {
+  text-decoration: underline;
+}
 /****** Media Queries ******/
 
 /* Large devices (desktops, 992px and up)*/
@@ -147,4 +167,11 @@ body {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+
+  .sponsors {
+    display: block;
+  }
+
+
+
  }
