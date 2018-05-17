@@ -3,15 +3,17 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #2F4858;
+  background-color: #ded9e2;
   font-family: ariel, sans-serif;
-  color: #f4f4f4;
+  color: navy;
+  letter-spacing: 1px;
 
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .headings {
@@ -47,7 +49,7 @@ font-size: 1.2em;
 }
 
 .main-nav a {
-  color: #86bbd8;
+  color: navy;
   text-decoration: none;
   margin: 5px 0;
   padding: 5px;
@@ -56,8 +58,8 @@ font-size: 1.2em;
 }
 
 .main-nav a:hover {
-  background-color: #ffcc00;
-  color: black;
+  background-color: #80a1d4;
+  color: white;
 }
 
 /****** Hero ******/
@@ -109,7 +111,7 @@ font-size: 1.2em;
 .register button {
   border: 1px solid black;
   padding: 10px;
-  background-color: rgba(244, 244, 244, 0.5);
+  background-color: rgba(244, 244, 244, 0.8);
   margin-top: 20px;
 }
 
@@ -120,6 +122,7 @@ font-size: 1.2em;
   height: auto;
   background-color: #33658a;
   width: 90%;
+  max-width: 420px;
   padding: 0 10px;
   border-radius: 10px;
   display: -webkit-box;
@@ -180,14 +183,59 @@ font-size: 1.2em;
               -ms-flex: 1;
                   flex: 1;
 }
+
+/****** Schedule ******/
+
+.schedule-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.schedule-container td {
+  border: 1px solid black;
+}
+
+.conf-schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+          padding: 0 1em;
+}
+
+.table-heading td {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.schedule-time {
+  width: 50px;
+  border: 1px solid black;
+}
+
+.schedule-topic {
+  text-align: center;
+  padding: 10px;
+}
+
+/* .conf-schedule td {
+  display: inline-block;
+  padding: 0 20px;
+} */
 /****** Media Queries ******/
 
 /* Large devices (desktops, 992px and up)*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 500px) {
+
     .main-nav {
-    width: 80%;
     margin-top: 20px;
-    padding-left: 100px;
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -225,6 +273,8 @@ font-size: 1.2em;
             flex-direction: row;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
   }
 
 
