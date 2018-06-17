@@ -1,3 +1,15 @@
+/****** Menu toggle for Mobile  ******/
+const navToggleButton = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.navMenu');
+
+navToggleButton.addEventListener('click', () => {
+  if (navMenu.style.display == 'none') {
+    navMenu.style.display = 'block';
+  } else {
+    navMenu.style.display = 'none';
+  }
+});
+
 /****** Sponsor Carousel ******/
 
 var myIndex = 0;
@@ -11,7 +23,9 @@ function carousel() {
   }
 
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1;}
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
 
   x[myIndex - 1].style.display = 'block';
   setTimeout(carousel, 5000);

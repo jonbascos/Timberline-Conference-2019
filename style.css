@@ -36,6 +36,32 @@ body {
   margin-top: 20px;
 }
 
+.navigation {
+  text-align: center;
+  margin: 20px 0;
+  border: none;
+}
+
+.nav-toggle {
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-toggle:focus {
+  outline: none;
+}
+
+.nav-toggle:hover {
+  background-color: #80a1d4;
+  color: white;
+}
+
+.navMenu {
+  display: none;
+}
 
 .main-nav {
   display: -webkit-box;
@@ -232,6 +258,14 @@ font-size: 1.2em;
 
 /* Large devices (desktops, 992px and up)*/
 @media only screen and (min-width: 500px) {
+
+    .navigation {
+      display: none;
+    }
+    
+    .navMenu {
+      display: block;
+    }
 
     .main-nav {
     margin-top: 20px;
